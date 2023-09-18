@@ -1,0 +1,53 @@
+CREATE TABLE Alunos
+(
+ra INT,
+nome VARCHAR(20),
+data_nasc DATE,
+endereco VARCHAR(20),
+email VARCHAR(25)
+);
+
+
+INSERT INTO Alunos (ra, nome, data_nasc, endereco, email)
+VALUES (224537, 'Felipe', '2002-11-26', 'facens', 'felipe@gmail.com');
+
+INSERT INTO Alunos (ra, nome, data_nasc, endereco, email)
+VALUES (234321, 'Pedro', '2000-03-13', 'facens', 'pedro@gmail.com');
+
+INSERT INTO Alunos (ra, nome, data_nasc, endereco, email)
+VALUES (228945, 'Ana', '2001-12-25', 'facens', 'Ana@gmail.com');
+
+INSERT INTO Alunos (ra, nome, data_nasc, endereco, email)
+VALUES (223456, 'Joao', '1999-10-19', 'facens', 'Joao@gmail.com');
+
+INSERT INTO Alunos (ra, nome, data_nasc, endereco, email)
+VALUES (223456, 'Carlos', '2000-05-20', 'facens', 'carlos@gmail.com');
+
+
+
+SELECT ra, nome, data_nasc, endereco, email FROM Alunos;
+
+CREATE TABle colaboradores (
+  id INT(200),
+  nome VARCHAR(200),
+  cpf VARCHAR(12),
+  cargo VARCHAR(200),
+  salario DECIMAL(8,2)
+);
+
+INSERT INTO colaboradores (id, nome, cpf, cargo, salario)
+VALUES (12345, 'Felipe', '012.456.789.01', 'Dev', 2000.00);
+
+INSERT INTO colaboradores (id, nome, cpf, cargo, salario)
+VALUES (54321, 'Carlos', '210.654.987.11', 'Dev', 2500.00);
+
+INSERT INTO colaboradores (id, nome, cpf, cargo, salario)
+VALUES (45132, 'Joao', '102.546.879.22', 'Dev', 2700.00);
+
+INSERT INTO colaboradores (id, nome, cpf, cargo, salario)
+VALUES (98745, 'Ana', '456.978.123.33', 'Dev', 2800.00);
+
+INSERT INTO colaboradores (id, nome, cpf, cargo, salario)
+VALUES (12378, 'Paula', '256.779.566.44', 'Dev', 3000.00);
+
+SELECT * FROM colaboradores;
